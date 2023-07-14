@@ -1,0 +1,36 @@
+
+
+
+columns
+-base_pokemon
+id - number (auto increments)
+base_name - string
+pokedex num - number
+is legendary - bool
+is paradox - bool
+is ultra beast - bool
+created at - timestamp
+updated at - timestamp
+
+-variants
+id - number (auto increments)
+pokedex num - number
+variant name - string
+type 1 - string
+type 2 - string
+stats - number
+is regional - bool
+is mega - bool
+
+base_variants_rel
+base_id - fk
+variant_id - fk
+
+
+-types
+type - string
+type effectiveness vs X type - number (float)
+
+-types_var_rel
+
+
