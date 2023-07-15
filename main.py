@@ -30,16 +30,22 @@ def getPokemonByName(pokemon_name : str):
 
 @app.post('/pokemon')
 def uploadPokemon(pokemonCSV: UploadFile, db : Session = Depends(get_db)):
-    fu.uploadCSVToPokemonDatabase(pokemonCSV, db)
-    return {"message": 'File uploaded successfully'}
+    try:
+        fu.uploadCSVToPokemonDatabase(pokemonCSV, db)
+    finally:
+        return {"message": 'File uploaded successfully'}
 
 
 @app.post('/variants')
 def uploadPokemon(pokemonCSV: UploadFile, db : Session = Depends(get_db)):
-    fu.uploadCSVToVariantDatabase(pokemonCSV, db)
-    return {"message": 'File uploaded successfully'}
+    try:
+        fu.uploadCSVToVariantDatabase(pokemonCSV, db)
+    finally:
+        return {"message": 'File uploaded successfully'}
 
 @app.post('/types')
 def uploadPokemon(pokemonTypesCSV: UploadFile, db : Session = Depends(get_db)):
-    fu.uploadCSVToTypeDatabase(pokemonTypesCSV, db)
-    return {"message": 'File uploaded successfully'}
+    try:
+        fu.uploadCSVToTypeDatabase(pokemonTypesCSV, db)
+    finally:
+        return {"message": 'File uploaded successfully'}
