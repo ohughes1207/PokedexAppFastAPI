@@ -8,9 +8,21 @@ from db_configs import fileuploads as fu
 from schemas.PokemonSchemas import PokemonCreateRequest
 from schemas.VariantSchemas import VariantCreateRequest
 
+from origins import origins
+from fastapi.middleware.cors import CORSMiddleware
+
+
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.get('/')
