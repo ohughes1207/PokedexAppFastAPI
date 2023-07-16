@@ -31,8 +31,18 @@ def home():
 
 
 @app.get('/pokemon')
-def getAllPokemon():
-    return PokedexService().getAllPokemon()
+def getAllPokemon(db : Session = Depends(get_db)):
+    return PokedexService().getAllPokemon(db)
+
+
+@app.get('/variants')
+def getAllPokemon(db : Session = Depends(get_db)):
+    return PokedexService().getAllVariants(db)
+
+
+@app.get('/types')
+def getAllPokemon(db : Session = Depends(get_db)):
+    return PokedexService().getAllType(db)
 
 
 @app.get('/pokemon/{pokemon_name}')
