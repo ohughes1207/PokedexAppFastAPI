@@ -55,7 +55,6 @@ def uploadCSVToTypeDatabase(file, db):
         def_vs_Electric=row[8], def_vs_Ground=row[9], def_vs_Ice=row[10], def_vs_Fairy=row[11], def_vs_Steel=row[12], def_vs_Fighting=row[13], def_vs_Psychic=row[14], def_vs_Rock=row[15],
         def_vs_Ghost=row[16], def_vs_Dragon=row[17], def_vs_Flying=row[18])
         db.add(typesStats)
-
     try:
         db.commit()
     except:
