@@ -31,10 +31,7 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 22,Fearow,Fearow,Normal,Flying,442,65,90,65,61,61,100,1,False,False,False,False,False,False,False,0022_Fearow.png
 23,Ekans,Ekans,Poison,,288,35,60,44,40,54,55,1,False,False,False,False,False,False,False,0023_Ekans.png
 24,Arbok,Arbok,Poison,,448,60,95,69,65,79,80,1,False,False,False,False,False,False,False,0024_Arbok.png
-25,Pikachu,Pikachu,Electric,,300,35,55,30,50,40,90,1,False,False,False,False,False,False,False,0025_Pikachu.png
-25,Pikachu,Pikachu in a cap,Electric,,300,35,55,30,50,40,90,1,False,False,False,False,False,False,False,0025_Pikachu in a cap.png
-25,Pikachu,Cosplay Pikachu,Electric,,320,35,55,40,50,50,90,1,False,False,False,False,False,False,False,0025_Cosplay Pikachu.png
-25,Pikachu,Partner Pikachu,Electric,,320,35,55,40,50,50,90,1,False,False,False,False,False,False,False,0025_Partner Pikachu.png
+25,Pikachu,Pikachu,Electric,,320,35,55,40,50,50,90,1,False,False,False,False,False,False,False,0025_Pikachu.png
 26,Raichu,Raichu,Electric,,485,60,90,55,90,80,110,1,False,False,False,False,False,False,False,0026_Raichu.png
 26,Raichu,Alolan Raichu,Electric,Psychic,485,60,85,50,95,85,110,1,False,False,False,False,False,True,False,0026_Alolan Raichu.png
 27,Sandshrew,Sandshrew,Ground,,300,50,75,85,20,30,40,1,False,False,False,False,False,False,False,0027_Sandshrew.png
@@ -199,7 +196,7 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 146,Moltres,Galarian Moltres,Dark,Flying,580,90,85,90,100,125,90,1,False,False,True,False,False,True,False,0146_Galarian Moltres.png
 147,Dratini,Dratini,Dragon,,300,41,64,45,50,50,50,1,False,False,False,False,False,False,False,0147_Dratini.png
 148,Dragonair,Dragonair,Dragon,,420,61,84,65,70,70,70,1,False,False,False,False,False,False,False,0148_Dragonair.png
-149,Dragonite,Dragonite,Dragon,Flying,600,91,134,95,100,100,80,1,False,False,False,False,False,False,False,0149_Dragonite.png
+149,Dragonite,Dragonite,Dragon,Flying,600,91,134,95,100,100,80,1,False,False,False,True,False,False,False,0149_Dragonite.png
 150,Mewtwo,Mewtwo,Psychic,,680,106,110,90,154,90,130,1,False,False,True,False,False,False,False,0150_Mewtwo.png
 150,Mewtwo,Mega Mewtwo X,Psychic,Fighting,780,106,190,100,154,100,130,1,True,False,True,False,False,False,False,0150_Mega Mewtwo X.png
 150,Mewtwo,Mega Mewtwo Y,Psychic,,780,106,150,70,194,120,140,1,True,False,True,False,False,False,False,0150_Mega Mewtwo Y.png
@@ -311,8 +308,8 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 245,Suicune,Suicune,Water,,580,100,75,115,90,115,85,2,False,False,True,False,False,False,False,0245_Suicune.png
 246,Larvitar,Larvitar,Rock,Ground,300,50,64,50,45,50,41,2,False,False,False,False,False,False,False,0246_Larvitar.png
 247,Pupitar,Pupitar,Rock,Ground,410,70,84,70,65,70,51,2,False,False,False,False,False,False,False,0247_Pupitar.png
-248,Tyranitar,Tyranitar,Rock,Dark,600,100,134,110,95,100,61,2,False,False,False,False,False,False,False,0248_Tyranitar.png
-248,Tyranitar,Mega Tyranitar,Rock,Dark,700,100,164,150,95,120,71,2,True,False,False,False,False,False,False,0248_Mega Tyranitar.png
+248,Tyranitar,Tyranitar,Rock,Dark,600,100,134,110,95,100,61,2,False,False,False,True,False,False,False,0248_Tyranitar.png
+248,Tyranitar,Mega Tyranitar,Rock,Dark,700,100,164,150,95,120,71,2,True,False,False,True,False,False,False,0248_Mega Tyranitar.png
 249,Lugia,Lugia,Psychic,Flying,680,106,90,130,90,154,110,2,False,False,True,False,False,False,False,0249_Lugia.png
 250,Ho-Oh,Ho-Oh,Fire,Flying,680,106,130,90,110,154,90,2,False,False,True,False,False,False,False,0250_Ho-Oh.png
 251,Celebi,Celebi,Psychic,Grass,600,100,100,100,100,100,100,2,False,False,False,False,False,False,True,0251_Celebi.png
@@ -457,12 +454,12 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 370,Luvdisc,Luvdisc,Water,,330,43,30,55,40,65,97,3,False,False,False,False,False,False,False,0370_Luvdisc.png
 371,Bagon,Bagon,Dragon,,300,45,75,60,40,30,50,3,False,False,False,False,False,False,False,0371_Bagon.png
 372,Shelgon,Shelgon,Dragon,,420,65,95,100,60,50,50,3,False,False,False,False,False,False,False,0372_Shelgon.png
-373,Salamence,Salamence,Dragon,Flying,600,95,135,80,110,80,100,3,False,False,False,False,False,False,False,0373_Salamence.png
-373,Salamence,Mega Salamence,Dragon,Flying,700,95,145,130,120,90,120,3,True,False,False,False,False,False,False,0373_Mega Salamence.png
+373,Salamence,Salamence,Dragon,Flying,600,95,135,80,110,80,100,3,False,False,False,True,False,False,False,0373_Salamence.png
+373,Salamence,Mega Salamence,Dragon,Flying,700,95,145,130,120,90,120,3,True,False,False,True,False,False,False,0373_Mega Salamence.png
 374,Beldum,Beldum,Steel,Psychic,300,40,55,80,35,60,30,3,False,False,False,False,False,False,False,0374_Beldum.png
 375,Metang,Metang,Steel,Psychic,420,60,75,100,55,80,50,3,False,False,False,False,False,False,False,0375_Metang.png
-376,Metagross,Metagross,Steel,Psychic,600,80,135,130,95,90,70,3,False,False,False,False,False,False,False,0376_Metagross.png
-376,Metagross,Mega Metagross,Steel,Psychic,700,80,145,150,105,110,110,3,True,False,False,False,False,False,False,0376_Mega Metagross.png
+376,Metagross,Metagross,Steel,Psychic,600,80,135,130,95,90,70,3,False,False,False,True,False,False,False,0376_Metagross.png
+376,Metagross,Mega Metagross,Steel,Psychic,700,80,145,150,105,110,110,3,True,False,False,True,False,False,False,0376_Mega Metagross.png
 377,Regirock,Regirock,Rock,,580,80,100,200,50,100,50,3,False,False,True,False,False,False,False,0377_Regirock.png
 378,Regice,Regice,Ice,,580,80,50,100,100,200,50,3,False,False,True,False,False,False,False,0378_Regice.png
 379,Registeel,Registeel,Steel,,580,80,75,150,75,150,50,3,False,False,True,False,False,False,False,0379_Registeel.png
@@ -543,8 +540,8 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 442,Spiritomb,Spiritomb,Ghost,Dark,485,50,92,108,92,108,35,4,False,False,False,False,False,False,False,0442_Spiritomb.png
 443,Gible,Gible,Dragon,Ground,300,58,70,45,40,45,42,4,False,False,False,False,False,False,False,0443_Gible.png
 444,Gabite,Gabite,Dragon,Ground,410,68,90,65,50,55,82,4,False,False,False,False,False,False,False,0444_Gabite.png
-445,Garchomp,Garchomp,Dragon,Ground,600,108,130,95,80,85,102,4,False,False,False,False,False,False,False,0445_Garchomp.png
-445,Garchomp,Mega Garchomp,Dragon,Ground,700,108,170,115,120,95,92,4,True,False,False,False,False,False,False,0445_Mega Garchomp.png
+445,Garchomp,Garchomp,Dragon,Ground,600,108,130,95,80,85,102,4,False,False,False,True,False,False,False,0445_Garchomp.png
+445,Garchomp,Mega Garchomp,Dragon,Ground,700,108,170,115,120,95,92,4,True,False,False,True,False,False,False,0445_Mega Garchomp.png
 446,Munchlax,Munchlax,Normal,,390,135,85,40,40,85,5,4,False,False,False,False,False,False,False,0446_Munchlax.png
 447,Riolu,Riolu,Fighting,,285,40,70,40,35,40,60,4,False,False,False,False,False,False,False,0447_Riolu.png
 448,Lucario,Lucario,Fighting,Steel,525,70,110,70,115,70,90,4,False,False,False,False,False,False,False,0448_Lucario.png
@@ -671,9 +668,9 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 554,Darumaka,Darumaka,Fire,,315,70,90,45,15,45,50,5,False,False,False,False,False,False,False,0554_Darumaka.png
 554,Darumaka,Galarian Darumaka,Ice,,315,70,90,45,15,45,50,5,False,False,False,False,False,True,False,0554_Galarian Darumaka.png
 555,Darmanitan,Darmanitan Standard Mode,Fire,,480,105,140,55,30,55,95,5,False,False,False,False,False,False,False,0555_Darmanitan Standard Mode.png
-555,Darmanitan,Darmanitan Galarian Zen Mode,Ice,Fire,480,105,140,55,30,55,95,5,False,False,False,False,False,True,False,0555_Darmanitan Galarian Zen Mode.png
-555,Darmanitan,Darmanitan Galarian Standard Mode,Ice,,540,105,30,105,140,105,55,5,False,False,False,False,False,True,False,0555_Darmanitan Galarian Standard Mode.png
-555,Darmanitan,Darmanitan Zen Mode,Fire,Psychic,540,105,160,55,30,55,135,5,False,False,False,False,False,False,False,0555_Darmanitan Zen Mode.png
+555,Darmanitan,Darmanitan Galarian Standard Mode,Ice,,480,105,140,55,30,55,95,5,False,False,False,False,False,True,False,0555_Darmanitan Galarian Standard Mode.png
+555,Darmanitan,Darmanitan Zen Mode,Fire,Psychic,540,105,30,105,140,105,55,5,False,False,False,False,False,False,False,0555_Darmanitan Zen Mode.png
+555,Darmanitan,Darmanitan Galarian Zen Mode,Ice,Fire,540,105,160,55,30,55,135,5,False,False,False,False,False,True,False,0555_Darmanitan Galarian Zen Mode.png
 556,Maractus,Maractus,Grass,,461,75,86,67,106,67,60,5,False,False,False,False,False,False,False,0556_Maractus.png
 557,Dwebble,Dwebble,Bug,Rock,325,50,65,85,35,35,55,5,False,False,False,False,False,False,False,0557_Dwebble.png
 558,Crustle,Crustle,Bug,Rock,485,70,105,125,65,75,45,5,False,False,False,False,False,False,False,0558_Crustle.png
@@ -758,7 +755,7 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 632,Durant,Durant,Bug,Steel,484,58,109,112,48,48,109,5,False,False,False,False,False,False,False,0632_Durant.png
 633,Deino,Deino,Dark,Dragon,300,52,65,50,45,50,38,5,False,False,False,False,False,False,False,0633_Deino.png
 634,Zweilous,Zweilous,Dark,Dragon,420,72,85,70,65,70,58,5,False,False,False,False,False,False,False,0634_Zweilous.png
-635,Hydreigon,Hydreigon,Dark,Dragon,600,92,105,90,125,90,98,5,False,False,False,False,False,False,False,0635_Hydreigon.png
+635,Hydreigon,Hydreigon,Dark,Dragon,600,92,105,90,125,90,98,5,False,False,False,True,False,False,False,0635_Hydreigon.png
 636,Larvesta,Larvesta,Bug,Fire,360,55,85,55,50,55,60,5,False,False,False,False,False,False,False,0636_Larvesta.png
 637,Volcarona,Volcarona,Bug,Fire,550,85,60,65,135,105,100,5,False,False,False,False,False,False,False,0637_Volcarona.png
 638,Cobalion,Cobalion,Steel,Fighting,580,91,90,129,90,72,108,5,False,False,True,False,False,False,False,0638_Cobalion.png
@@ -838,8 +835,8 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 704,Goomy,Goomy,Dragon,,300,45,50,35,55,75,40,6,False,False,False,False,False,False,False,0704_Goomy.png
 705,Sliggoo,Sliggoo,Dragon,,452,68,75,53,83,113,60,6,False,False,False,False,False,False,False,0705_Sliggoo.png
 705,Sliggoo,Hisuian Sliggoo,Steel,Dragon,452,58,75,83,83,113,40,6,False,False,False,False,False,True,False,0705_Hisuian Sliggoo.png
-706,Goodra,Goodra,Dragon,,600,90,100,70,110,150,80,6,False,False,False,False,False,False,False,0706_Goodra.png
-706,Goodra,Hisuian Goodra,Steel,Dragon,600,80,100,100,110,150,60,6,False,False,False,False,False,True,False,0706_Hisuian Goodra.png
+706,Goodra,Goodra,Dragon,,600,90,100,70,110,150,80,6,False,False,False,True,False,False,False,0706_Goodra.png
+706,Goodra,Hisuian Goodra,Steel,Dragon,600,80,100,100,110,150,60,6,False,False,False,True,False,True,False,0706_Hisuian Goodra.png
 707,Klefki,Klefki,Steel,Fairy,470,57,80,91,80,87,75,6,False,False,False,False,False,False,False,0707_Klefki.png
 708,Phantump,Phantump,Ghost,Grass,309,43,70,48,50,60,38,6,False,False,False,False,False,False,False,0708_Phantump.png
 709,Trevenant,Trevenant,Ghost,Grass,474,85,110,76,65,82,56,6,False,False,False,False,False,False,False,0709_Trevenant.png
@@ -858,8 +855,8 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 715,Noivern,Noivern,Flying,Dragon,535,85,70,80,97,80,123,6,False,False,False,False,False,False,False,0715_Noivern.png
 716,Xerneas,Xerneas,Fairy,,680,126,131,95,131,98,99,6,False,False,True,False,False,False,False,0716_Xerneas.png
 717,Yveltal,Yveltal,Dark,Flying,680,126,131,95,131,98,99,6,False,False,True,False,False,False,False,0717_Yveltal.png
-718,Zygarde,Zygarde 10% Forme,Dragon,Ground,486,54,100,71,61,85,115,6,False,False,True,False,False,False,False,0718_Zygarde 10% Forme.png
-718,Zygarde,Zygarde 50% Forme,Dragon,Ground,600,108,100,121,81,95,95,6,False,False,True,False,False,False,False,0718_Zygarde 50% Forme.png
+718,Zygarde,Zygarde 10% Forme,Dragon,Ground,486,54,100,71,61,85,115,6,False,False,True,False,False,False,False,0718_Zygarde 10 Forme.png
+718,Zygarde,Zygarde 50% Forme,Dragon,Ground,600,108,100,121,81,95,95,6,False,False,True,False,False,False,False,0718_Zygarde 50 Forme.png
 718,Zygarde,Zygarde Complete Forme,Dragon,Ground,708,216,100,121,91,95,85,6,False,False,True,False,False,False,False,0718_Zygarde Complete Forme.png
 719,Diancie,Diancie,Rock,Fairy,600,50,100,150,100,150,50,6,False,False,False,False,False,False,True,0719_Diancie.png
 719,Diancie,Mega Diancie,Rock,Fairy,700,50,160,110,160,110,110,6,True,False,False,False,False,False,True,0719_Mega Diancie.png
@@ -923,7 +920,7 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 769,Sandygast,Sandygast,Ghost,Ground,320,55,55,80,70,45,15,7,False,False,False,False,False,False,False,0769_Sandygast.png
 770,Palossand,Palossand,Ghost,Ground,480,85,75,110,100,75,35,7,False,False,False,False,False,False,False,0770_Palossand.png
 771,Pyukumuku,Pyukumuku,Water,,410,55,60,130,30,130,5,7,False,False,False,False,False,False,False,0771_Pyukumuku.png
-772,Type: Null,Type: Null,Normal,,534,95,95,95,95,95,59,7,False,False,False,False,False,False,False,0772_Type Null.png
+772,Type: Null,Type: Null,Normal,,534,95,95,95,95,95,59,7,False,False,True,False,False,False,False,0772_Type Null.png
 773,Silvally,Silvally,Normal,,570,95,95,95,95,95,95,7,False,False,True,False,False,False,False,0773_Silvally.png
 774,Minior,Minior Meteor Form,Rock,Flying,440,60,60,100,60,100,60,7,False,False,False,False,False,False,False,0774_Minior Meteor Form.png
 774,Minior,Core,Rock,Flying,500,60,100,60,100,60,120,7,False,False,False,False,False,False,False,0774_Core.png
@@ -936,7 +933,7 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 781,Dhelmise,Dhelmise,Ghost,Grass,517,70,131,100,86,90,40,7,False,False,False,False,False,False,False,0781_Dhelmise.png
 782,Jangmo-o,Jangmo-o,Dragon,,300,45,55,65,45,45,45,7,False,False,False,False,False,False,False,0782_Jangmo-o.png
 783,Hakamo-o,Hakamo-o,Dragon,Fighting,420,55,75,90,65,70,65,7,False,False,False,False,False,False,False,0783_Hakamo-o.png
-784,Kommo-o,Kommo-o,Dragon,Fighting,600,75,110,125,100,105,85,7,False,False,False,False,False,False,False,0784_Kommo-o.png
+784,Kommo-o,Kommo-o,Dragon,Fighting,600,75,110,125,100,105,85,7,False,False,False,True,False,False,False,0784_Kommo-o.png
 785,Tapu Koko,Tapu Koko,Electric,Fairy,570,70,115,85,95,75,130,7,False,False,True,False,False,False,False,0785_Tapu Koko.png
 786,Tapu Lele,Tapu Lele,Psychic,Fairy,570,70,85,75,130,115,95,7,False,False,True,False,False,False,False,0786_Tapu Lele.png
 787,Tapu Bulu,Tapu Bulu,Grass,Fairy,570,70,130,115,85,95,75,7,False,False,True,False,False,False,False,0787_Tapu Bulu.png
@@ -1044,7 +1041,7 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 884,Duraludon,Duraludon,Steel,Dragon,535,70,95,115,120,50,85,8,False,False,False,False,False,False,False,0884_Duraludon.png
 885,Dreepy,Dreepy,Dragon,Ghost,270,28,60,30,40,30,82,8,False,False,False,False,False,False,False,0885_Dreepy.png
 886,Drakloak,Drakloak,Dragon,Ghost,410,68,80,50,60,50,102,8,False,False,False,False,False,False,False,0886_Drakloak.png
-887,Dragapult,Dragapult,Dragon,Ghost,600,88,120,75,100,75,142,8,False,False,False,False,False,False,False,0887_Dragapult.png
+887,Dragapult,Dragapult,Dragon,Ghost,600,88,120,75,100,75,142,8,False,False,False,True,False,False,False,0887_Dragapult.png
 888,Zacian,Zacian Hero of Many Battles,Fairy,,660,92,120,115,80,115,138,8,False,False,True,False,False,False,False,0888_Zacian Hero of Many Battles.png
 888,Zacian,Zacian Crowned Sword,Fairy,Steel,700,92,150,115,80,115,148,8,False,False,True,False,False,False,False,0888_Zacian Crowned Sword.png
 889,Zamazenta,Zamazenta Hero of Many Battles,Fighting,,660,92,120,115,80,115,138,8,False,False,True,False,False,False,False,0889_Zamazenta Hero of Many Battles.png
@@ -1068,8 +1065,8 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 902,Basculegion,Basculegion Male,Water,Ghost,530,120,112,65,80,75,78,8,False,False,False,False,False,False,False,0902_Basculegion Male.png
 903,Sneasler,Sneasler,Fighting,Poison,510,80,130,60,40,80,120,8,False,False,False,False,False,False,False,0903_Sneasler.png
 904,Overqwil,Overqwil,Dark,Poison,510,85,115,95,65,65,85,8,False,False,False,False,False,False,False,0904_Overqwil.png
-905,Enamorus,Enamorus Incarnate Forme,Fairy,Flying,580,74,115,70,135,80,106,8,False,False,False,False,False,False,False,0905_Enamorus Incarnate Forme.png
-905,Enamorus,Enamorus Therian Forme,Fairy,Flying,580,74,115,110,135,100,46,8,False,False,False,False,False,False,False,0905_Enamorus Therian Forme.png
+905,Enamorus,Enamorus Incarnate Forme,Fairy,Flying,580,74,115,70,135,80,106,8,False,False,True,False,False,False,False,0905_Enamorus Incarnate Forme.png
+905,Enamorus,Enamorus Therian Forme,Fairy,Flying,580,74,115,110,135,100,46,8,False,False,True,False,False,False,False,0905_Enamorus Therian Forme.png
 906,Sprigatito,Sprigatito,Grass,,310,40,61,54,45,45,65,9,False,False,False,False,False,False,False,0906_Sprigatito.png
 907,Floragato,Floragato,Grass,,410,61,80,63,60,63,83,9,False,False,False,False,False,False,False,0907_Floragato.png
 908,Meowscarada,Meowscarada,Grass,Dark,530,76,110,70,81,70,123,9,False,False,False,False,False,False,False,0908_Meowscarada.png
@@ -1164,7 +1161,7 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 995,Iron Thorns,Iron Thorns,Rock,Electric,570,100,134,110,70,84,72,9,False,True,False,False,False,False,False,0995_Iron Thorns.png
 996,Frigibax,Frigibax,Dragon,Ice,320,65,75,45,35,45,55,9,False,False,False,False,False,False,False,0996_Frigibax.png
 997,Arctibax,Arctibax,Dragon,Ice,423,90,95,66,45,65,62,9,False,False,False,False,False,False,False,0997_Arctibax.png
-998,Baxcalibur,Baxcalibur,Dragon,Ice,600,115,145,92,75,86,87,9,False,False,False,False,False,False,False,0998_Baxcalibur.png
+998,Baxcalibur,Baxcalibur,Dragon,Ice,600,115,145,92,75,86,87,9,False,False,False,True,False,False,False,0998_Baxcalibur.png
 999,Gimmighoul,Gimmighoul Chest Form,Ghost,,300,45,30,70,75,70,10,9,False,False,False,False,False,False,False,0999_Gimmighoul Chest Form.png
 999,Gimmighoul,Gimmighoul Roaming Form,Ghost,,300,45,30,25,75,45,80,9,False,False,False,False,False,False,False,0999_Gimmighoul Roaming Form.png
 1000,Gholdengo,Gholdengo,Steel,Ghost,550,87,60,95,133,91,84,9,False,False,False,False,False,False,False,1000_Gholdengo.png
@@ -1174,7 +1171,7 @@ Pokedex Number,Base Pokemon,Variant Name,Type 1,Type 2,Total,HP,Attack,Defense,S
 1004,Chi-Yu,Chi-Yu,Dark,Fire,570,55,80,80,135,120,100,9,False,False,True,False,False,False,False,1004_Chi-Yu.png
 1005,Roaring Moon,Roaring Moon,Dragon,Dark,590,105,139,71,55,101,119,9,False,True,False,False,False,False,False,1005_Roaring Moon.png
 1006,Iron Valiant,Iron Valiant,Fairy,Fighting,590,74,130,90,120,60,116,9,False,True,False,False,False,False,False,1006_Iron Valiant.png
-1007,Koraidon,Koraidon Apex Build,Fighting,Dragon,670,100,135,115,85,100,135,9,False,True,False,False,False,False,False,1007_Koraidon Apex Build.png
-1008,Miraidon,Miraidon Ultimate Mode,Electric,Dragon,670,100,85,100,135,115,135,9,False,True,False,False,False,False,False,1008_Miraidon Ultimate Mode.png
+1007,Koraidon,Koraidon Apex Build,Fighting,Dragon,670,100,135,115,85,100,135,9,False,True,True,False,False,False,False,1007_Koraidon Apex Build.png
+1008,Miraidon,Miraidon Ultimate Mode,Electric,Dragon,670,100,85,100,135,115,135,9,False,True,True,False,False,False,False,1008_Miraidon Ultimate Mode.png
 1009,Walking Wake,Walking Wake,Water,Dragon,590,99,83,91,125,83,109,9,False,True,False,False,False,False,False,1009_Walking Wake.png
 1010,Iron Leaves,Iron Leaves,Grass,Psychic,590,90,130,88,70,108,104,9,False,True,False,False,False,False,False,1010_Iron Leaves.png
