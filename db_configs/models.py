@@ -10,6 +10,7 @@ class Pokemon(Base):
     gen = Column(Integer)
     legendary = Column(Boolean)
     paradox = Column(Boolean)
+    pseudo_legendary = Column(Boolean)
     ultrabeast = Column(Boolean)
     mythical = Column(Boolean)
     variants = relationship('Variant', backref='pokemon', lazy='dynamic')
