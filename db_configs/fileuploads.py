@@ -11,9 +11,9 @@ def uploadCSVToPokemonDatabase(file, db):
     existing_pokedex_nums = set()
 
     for row in rows:
-        if row[0] not in existing_pokedex_nums or db.query(Pokemon).filter_by(pokedex_num=row[0]).first() is None:
+        if row[0] not in existing_pokedex_nums: #or db.query(Pokemon).filter_by(pokedex_num=row[0]).first() is None:
             pokemon = Pokemon(pokedex_num=row[0], base_name=row[1], gen=row[12], legendary=strtobool(row[15]),
-            paradox=strtobool(row[14]), ultrabeast=strtobool(row[17]), mythical=strtobool(row[19]))
+            paradox=strtobool(row[14]), pseudo_legendary=strtobool(row[16]), ultrabeast=strtobool(row[17]), mythical=strtobool(row[19]))
             db.add(pokemon)
             existing_pokedex_nums.add(pokemon.pokedex_num)
     try:
