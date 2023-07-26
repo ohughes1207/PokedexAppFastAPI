@@ -6,6 +6,7 @@ class PokedexService:
         pass
     def getAllPokemon(self, db):
         pokemon_list = db.query(Pokemon).options(joinedload(Pokemon.variants)).all()
+        return pokemon_list
         
     def getAllVariants(self, db):
         return db.query(Variant).all()
