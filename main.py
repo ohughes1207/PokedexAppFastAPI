@@ -33,11 +33,7 @@ def home():
 @app.get('/pokemon')
 def getAllPokemon(db : Session = Depends(get_db)):
     return PokedexService().getAllPokemon(db)
-'''
-@app.get('/pokemon')
-def getAllPokemon(page: int, db : Session = Depends(get_db)):
-    return PokedexService().getAllPokemonPaginated(page, db)
-'''
+
 
 @app.get('/variants')
 def getAllVariants(db : Session = Depends(get_db)):
@@ -50,8 +46,8 @@ def getAllTypes(db : Session = Depends(get_db)):
 
 
 @app.get('/pokemon/{pokemon_name}')
-def getPokemonByName(pokemon_name : str):
-    return PokedexService().getPokemonByName(pokemon_name)
+def getPokemonByName(pokemon_name : str = '', db : Session = Depends(get_db)):
+    return PokedexService().getPokemonByName(pokemon_name, db)
 
 
 @app.post('/pokemon')
