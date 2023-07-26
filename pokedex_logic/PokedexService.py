@@ -5,7 +5,7 @@ class PokedexService:
     def __init__(self):
         pass
     def getAllPokemon(self, db):
-        pokemon_list = db.query(Pokemon).all()
+        pokemon_list = db.query(Pokemon).options(joinedload(Pokemon.variants)).all()
         
     def getAllVariants(self, db):
         return db.query(Variant).all()

@@ -13,7 +13,7 @@ class Pokemon(Base):
     pseudo_legendary = Column(Boolean)
     ultrabeast = Column(Boolean)
     mythical = Column(Boolean)
-    variants = relationship('Variant', backref='pokemon', lazy='dynamic')
+    variants = relationship('Variant', backref='pokemon')
 
 class Variant(Base):
     __tablename__ = "variants"
