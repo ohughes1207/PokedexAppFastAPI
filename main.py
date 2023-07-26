@@ -45,7 +45,7 @@ def getAllTypes(db : Session = Depends(get_db)):
     return PokedexService().getAllType(db)
 
 
-@app.get('/pokemon/{pokemon_name}')
+@app.get('/pokemon/search')
 def getPokemonByName(pokemon_name : str = '', db : Session = Depends(get_db)):
     return PokedexService().getPokemonByName(pokemon_name, db)
 
