@@ -1,6 +1,6 @@
 from db_configs.models import Pokemon, Variant, Type
+from sqlalchemy import and_, or_
 from sqlalchemy.orm import joinedload
-from sqlalchemy import null
 
 class PokedexService:
     def __init__(self):
@@ -38,23 +38,20 @@ class PokedexService:
         if Myth:
             query = query.filter(Pokemon.mythical == True)
 
-        query = query.options(joinedload(Pokemon.variants)).all()
-
         if T1:
-            query = query.filter(Pokemon.variants.any(type_1=T1))
+            query = query.filter(Pokemon.variants.any(or_(Variant.type_1 == T1, Variant.type_2 == T1)))
         if T2:
             if T2==T1:
-                query = query = query.filter(Pokemon.variants.any(type_2=null()))
+                query = query.filter(Pokemon.variants.any(and_(Variant.type_1 == T1, Variant.type_2 == None)))
             else:
-                query = query.filter(Pokemon.variants.any(type_2=T2))
+                query = query.filter(Pokemon.variants.any(Variant.type_2 == T2))
 
         if Regional:
-            query = query.filter(Pokemon.variants.any(regional == True))
+            query = query.filter(Pokemon.variants.any(Variant.regional == True))
         if Mega:
-            query = query.filter(Pokemon.variants.any(mega == True))
+            query = query.filter(Pokemon.variants.any(Variant.mega == True))
 
-            return query.all()
-
+        return query.options(joinedload(Pokemon.variants)).all()
 
     def getAllPokemonPaginated(self, page, db):
         #50 pokemon per page
