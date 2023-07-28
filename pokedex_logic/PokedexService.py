@@ -20,6 +20,8 @@ class PokedexService:
         else:
             return db.query(Pokemon).filter(Pokemon.base_name.ilike(f"%{pokemon_name}%")).all()
 
+    def getFilteredPokemon(self, pokemon_name : str, T1 : str, T2 : str, genValue : int, Leg : bool, Para : bool, Pseudo : bool, UB : bool, Myth : bool, Regional : bool, Mega : bool, db):
+
 
     def getAllPokemonPaginated(self, page, db):
         #50 pokemon per page
