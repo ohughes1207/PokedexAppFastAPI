@@ -50,6 +50,11 @@ def getPokemonByName(pokemon_name : str = '', db : Session = Depends(get_db)):
     return PokedexService().getPokemonByName(pokemon_name, db)
 
 
+@app.get('/pokemon/filter')
+def getFilteredPokemon(pokemon_name : str = '', T1 : str = '', T2 : str = '', genValue : int = '', Leg : bool = False, Para : bool = False, Pseudo : bool = False, UB : bool = False, Myth : bool = False, Regional : bool = False, Mega : bool =False, db : Session = Depends(get_db)):
+    return PokedexService().getFilteredPokemon(pokemon_name, T1, T2, genValue, Leg, Para, Pseudo, UB, Myth, Regional, Mega, db)
+
+
 @app.post('/pokemon')
 def uploadPokemon(pokemonCSV: UploadFile, db : Session = Depends(get_db)):
     try:
