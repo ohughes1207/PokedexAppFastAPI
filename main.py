@@ -29,11 +29,15 @@ app.add_middleware(
 def home():
     return {'message': 'Hello from Olli!'}
 
-
+'''
 @app.get('/pokemon')
 def getAllPokemon(db : Session = Depends(get_db)):
     return PokedexService().getAllPokemon(db)
+'''
 
+@app.get('/pokemon')
+def getAllPokemon(page: int, db : Session = Depends(get_db)):
+    return PokedexService().getAllPokemonPaginated(page, db)
 
 @app.get('/variants')
 def getAllVariants(db : Session = Depends(get_db)):
@@ -63,9 +67,10 @@ def getFilteredPokemon(
     Myth : bool = False,
     Regional : bool = False,
     Mega : bool = False,
+    page : int = 1,
     db : Session = Depends(get_db)):
 
-    return PokedexService().getFilteredPokemon(pokemon_name, T1, T2, genValue, Leg, Para, Pseudo, UB, Myth, Regional, Mega, db)
+    return PokedexService().getFilteredPokemon(pokemon_name, T1, T2, genValue, Leg, Para, Pseudo, UB, Myth, Regional, Mega, page, db)
 
 
 @app.post('/pokemon')

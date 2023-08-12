@@ -21,7 +21,7 @@ class PokedexService:
         else:
             return db.query(Pokemon).filter(Pokemon.base_name.ilike(f"%{pokemon_name}%")).all()
 
-    def getFilteredPokemon(self, pokemon_name : str, T1 : str, T2 : str, genValue : int, Leg : bool, Para : bool, Pseudo : bool, UB : bool, Myth : bool, Regional : bool, Mega : bool, db):
+    def getFilteredPokemon(self, pokemon_name : str, T1 : str, T2 : str, genValue : int, Leg : bool, Para : bool, Pseudo : bool, UB : bool, Myth : bool, Regional : bool, Mega : bool, page : int, db):
         query = db.query(Pokemon)
         if pokemon_name:
             query = query.filter(Pokemon.base_name.ilike(f"%{pokemon_name}%"))
@@ -51,12 +51,21 @@ class PokedexService:
         if Mega:
             query = query.filter(Pokemon.variants.any(Variant.mega == True))
 
-        return query.options(joinedload(Pokemon.variants)).all()
+        limit=100
+        count = query.count()
+        skip = (page - 1) * limit
+        total_pages = count / limit if count % limit == 0 else count // limit + 1
+        query = query.offset(skip).limit(limit)
+
+        pokemonData = query.options(joinedload(Pokemon.variants)).all()
+
+        return {"data": pokemonData, "total": count, "page": page, "per_page": limit, "total_pages": total_pages}
 
     def getAllPokemonPaginated(self, page, db):
-        #50 pokemon per page
-        limit=50
+        #100 pokemon per page
+        limit=100
         count = db.query(Pokemon).count()
         skip = (page - 1) * limit
         total_pages = count / limit if count % limit == 0 else count // limit + 1
-        return {"data": db.query(Pokemon).offset(skip).limit(limit).all(), "total": count, "page": page, "per_page": limit, "total_pages": total_pages}
+        pokemonData = db.query(Pokemon).offset(skip).limit(limit).options(joinedload(Pokemon.variants)).all()
+        return {"data": pokemonData, "total": count, "page": page, "per_page": limit, "total_pages": total_pages}
