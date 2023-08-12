@@ -55,7 +55,7 @@ def getFilteredPokemon(
     pokemon_name : str = '',
     T1 : str = '',
     T2 : str = '',
-    genValue : int = '',
+    genValue : int = 0,
     Leg : bool = False,
     Para : bool = False,
     Pseudo : bool = False,
