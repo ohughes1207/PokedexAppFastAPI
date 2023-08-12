@@ -39,12 +39,12 @@ class PokedexService:
             query = query.filter(Pokemon.mythical == True)
 
         if T1:
-            query = query.filter(Pokemon.variants.any(or_(Variant.type_1 == T1, Variant.type_2 == T1)))
+            query = query.filter(Pokemon.variants.any(or_(Variant.type_1.ilike(f"%{T1}%"), Variant.type_2.ilike(f"%{T1}%"))))
         if T2:
             if T2==T1:
-                query = query.filter(Pokemon.variants.any(and_(Variant.type_1 == T1, Variant.type_2 == None)))
+                query = query.filter(Pokemon.variants.any(and_(Variant.type_1.ilike(f"%{T1}%"), Variant.type_2 == None)))
             else:
-                query = query.filter(Pokemon.variants.any(or_(Variant.type_1 == T2, Variant.type_2 == T2)))
+                query = query.filter(Pokemon.variants.any(or_(Variant.type_1.ilike(f"%{T2}%"), Variant.type_2.ilike(f"%{T2}%"))))
 
         if Regional:
             query = query.filter(Pokemon.variants.any(Variant.regional == True))
