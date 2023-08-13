@@ -43,6 +43,8 @@ class PokedexService:
         if T2:
             if T2==T1:
                 query = query.filter(Pokemon.variants.any(and_(Variant.type_1.ilike(f"%{T1}%"), Variant.type_2 == None)))
+            elif T1 is not None:
+                query = query.filter(Pokemon.variants.any(or_(and_(Variant.type_1.ilike(f"%{T1}%"), Variant.type_2.ilike(f"%{T2}%")), and_(Variant.type_1.ilike(f"%{T2}%"), Variant.type_2.ilike(f"%{T1}%")))))
             else:
                 query = query.filter(Pokemon.variants.any(or_(Variant.type_1.ilike(f"%{T2}%"), Variant.type_2.ilike(f"%{T2}%"))))
 
