@@ -53,7 +53,7 @@ class PokedexService:
         if Mega:
             query = query.filter(Pokemon.variants.any(Variant.mega == True))
 
-        limit=100
+        limit=50
         count = query.count()
         skip = (page - 1) * limit
         total_pages = count / limit if count % limit == 0 else count // limit + 1
@@ -64,8 +64,8 @@ class PokedexService:
         return {"data": pokemonData, "total": count, "page": page, "per_page": limit, "total_pages": total_pages}
 
     def getAllPokemonPaginated(self, page, db):
-        #100 pokemon per page
-        limit=100
+        #50 pokemon per page
+        limit=50
         count = db.query(Pokemon).count()
         skip = (page - 1) * limit
         total_pages = count / limit if count % limit == 0 else count // limit + 1
