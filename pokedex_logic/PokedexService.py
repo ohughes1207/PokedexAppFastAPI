@@ -71,3 +71,12 @@ class PokedexService:
         total_pages = count / limit if count % limit == 0 else count // limit + 1
         pokemonData = db.query(Pokemon).offset(skip).limit(limit).options(joinedload(Pokemon.variants)).all()
         return {"data": pokemonData, "total": count, "page": page, "per_page": limit, "total_pages": total_pages}
+
+    def getVariantBySearch(self, search, db):
+        query = db.query(Variant)
+        if search:
+            query = query.filter(Variant.var_name.ilike(f"%{search}%"))
+
+            pokemonData = query.options(joinedload(Variant.type_1_rel)).options(joinedload(Variant.type_2_rel)).all()
+
+            return pokemonData

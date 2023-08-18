@@ -29,11 +29,6 @@ app.add_middleware(
 def home():
     return {'message': 'Hello from Olli!'}
 
-'''
-@app.get('/pokemon')
-def getAllPokemon(db : Session = Depends(get_db)):
-    return PokedexService().getAllPokemon(db)
-'''
 
 @app.get('/pokemon')
 def getAllPokemon(page: int, db : Session = Depends(get_db)):
@@ -52,6 +47,10 @@ def getAllTypes(db : Session = Depends(get_db)):
 @app.get('/pokemon/search')
 def getPokemonByName(pokemon_name : str = '', db : Session = Depends(get_db)):
     return PokedexService().getPokemonByName(pokemon_name, db)
+
+@app.get('/variants/search')
+def getPokemonByName(pokemon_name : str = '', db : Session = Depends(get_db)):
+    return PokedexService().getVariantBySearch(pokemon_name, db)
 
 
 @app.get('/pokemon/filter')
