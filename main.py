@@ -31,9 +31,8 @@ def home():
 
 
 @app.get('/pokemon')
-def getAllPokemon(db : Session = Depends(get_db)):
-    return PokedexService().getAllPokemon(db)
-
+def getAllPokemon(page: int, db : Session = Depends(get_db)):
+    return PokedexService().getAllPokemonPaginated(page, db)
 
 @app.get('/variants')
 def getAllVariants(db : Session = Depends(get_db)):
@@ -48,6 +47,29 @@ def getAllTypes(db : Session = Depends(get_db)):
 @app.get('/pokemon/search')
 def getPokemonByName(pokemon_name : str = '', db : Session = Depends(get_db)):
     return PokedexService().getPokemonByName(pokemon_name, db)
+
+@app.get('/variants/search')
+def getPokemonByName(pokemon_name : str = '', db : Session = Depends(get_db)):
+    return PokedexService().getVariantBySearch(pokemon_name, db)
+
+
+@app.get('/pokemon/filter')
+def getFilteredPokemon(
+    pokemon_name : str = '',
+    T1 : str = '',
+    T2 : str = '',
+    genValue : int = 0,
+    Leg : bool = False,
+    Para : bool = False,
+    Pseudo : bool = False,
+    UB : bool = False,
+    Myth : bool = False,
+    Regional : bool = False,
+    Mega : bool = False,
+    page : int = 1,
+    db : Session = Depends(get_db)):
+
+    return PokedexService().getFilteredPokemon(pokemon_name, T1, T2, genValue, Leg, Para, Pseudo, UB, Myth, Regional, Mega, page, db)
 
 
 @app.post('/pokemon')
