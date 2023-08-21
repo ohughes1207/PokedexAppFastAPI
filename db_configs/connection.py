@@ -2,7 +2,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 
-f=open('./db_configs/render_url.txt', 'r')
+f=open('render_url.txt', 'r')
 
 SQLALCHEMY_DB_URL = f.read()
 f.close()
