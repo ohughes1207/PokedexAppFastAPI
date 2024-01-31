@@ -24,7 +24,7 @@ class PokedexService:
     def getFilteredPokemon(self, pokemon_name : str, T1 : str, T2 : str, genValue : int, Leg : bool, Para : bool, Pseudo : bool, UB : bool, Myth : bool, Regional : bool, Mega : bool, page : int, db):
         query = db.query(Pokemon)
         if pokemon_name:
-            query = query.filter(Pokemon.base_name.ilike(f"%{pokemon_name}%"))
+            query = query.filter(Pokemon.variants.any(Variant.var_name.ilike(f"%{pokemon_name}%")))
         if genValue:
             query = query.filter(Pokemon.gen == genValue)
         if Leg:
