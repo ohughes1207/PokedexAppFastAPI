@@ -1,6 +1,6 @@
 import csv
-from db_configs.models import Pokemon, Variant, Type
-from distutils.util import strtobool
+from db_configs.models import Pokemon, Variant, Type#
+from ast import literal_eval
 
 def uploadCSVToPokemonDatabase(file, db):
 
@@ -12,8 +12,8 @@ def uploadCSVToPokemonDatabase(file, db):
 
     for row in rows:
         if row[0] not in existing_pokedex_nums: #or db.query(Pokemon).filter_by(pokedex_num=row[0]).first() is None:
-            pokemon = Pokemon(pokedex_num=row[0], base_name=row[1], gen=row[12], legendary=strtobool(row[15]),
-            paradox=strtobool(row[14]), pseudo_legendary=strtobool(row[16]), ultrabeast=strtobool(row[17]), mythical=strtobool(row[19]))
+            pokemon = Pokemon(pokedex_num=row[0], base_name=row[1], gen=row[12], legendary=literal_eval(row[15]),
+            paradox=literal_eval(row[14]), pseudo_legendary=literal_eval(row[16]), ultrabeast=literal_eval(row[17]), mythical=literal_eval(row[19]))
             db.add(pokemon)
             existing_pokedex_nums.add(pokemon.pokedex_num)
     try:
