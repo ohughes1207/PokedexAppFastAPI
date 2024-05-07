@@ -34,7 +34,7 @@ def uploadCSVToVariantDatabase(file, db):
     for row in rows:
 
         variant = Variant(pokedex_num=row[0], var_name=row[2], type_1=row[3], type_2=row[4] if row[4] else None, total_stats=row[5],
-        hp=row[6], att=row[7], defense=row[8], sp_att=row[9], sp_def=row[10], speed=row[11], regional=strtobool(row[18]), mega=strtobool(row[13]), img_name=row[20])
+        hp=row[6], att=row[7], defense=row[8], sp_att=row[9], sp_def=row[10], speed=row[11], regional=literal_eval(row[18]), mega=literal_eval(row[13]), img_name=row[20])
         db.add(variant)
     try:
         db.commit()
